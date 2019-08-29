@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bamazon</title>
+    <!-- ------------BOOTSTRAP CSS CDN------------------ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <!-- ------------BOOTSTRAP JS CDN------------------ -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- -----------JQUERY CDN------------------ -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- ------------FONT AWESOME------------------ -->
+    <script src="https://kit.fontawesome.com/f00d6f8059.js"></script>
+    <!-- ------------OTHER JS FILES------------------ -->
+    <script src="./js/app.js"></script>
+    <script src="./js/product.js"></script>
+    <!-- ------------OTHER CSS FILES------------------ -->
+    <link rel="stylesheet" type="text/css" href="./css/styel.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link viewCart" data-toggle="modal" data-target="#exampleModal" href="#"> View
+                            Cart<i class="fas fa-shopping-cart"></i><span class="cartItem">
+                                0
+                            </span>
+
+                        </a>
+                        <!-- <a class="nav-link viewCart" href="/cart">  <i class="fas fa-shopping-cart"></i>
+                            <span class="cartItem">
+                                0
+                            </span></a> -->
+                    </li>
+                </ul>
+                <h1 class="display-4">Bamazon</h1>
+                <p class="lead">Welcome to Bamazon. Shop our collection on unique eclectic jewelry.</p>
+            </div>
+        </div>
+        <div class="products">
+            <div class="row justify-content-center">
+                <div class="column product1 card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./product image/P1/product 1a.png" class="card-img-top"
+                            alt="Turquoise Tribal Necklace">
+                        <div class="card-body">
+                            <h5 class="card-title">Turquoise Tribal Necklace</h5>
+                            <p class="cost">$ <span class="price">20</span></p>
+                            <button class="btn btn-primary addCart" id="p1" value="p1"
+                                name="Turquoise Tribal Necklace">Add to Cart</button>
+                            <!-- <a href="./product.html" class="btn btn-primary addCart">Add to Card</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column product2 card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./product image/p2/product2a.png" class="card-img-top" alt="Amethyst Bracelet">
+                        <div class="card-body">
+                            <h5 class="card-title">Amethyst Bracelet</h5>
+                            <p class="cost">$ <span class="price">21</span></p>
+                            <button class="btn btn-primary addCart" id="p2" value="p2" name="Amethyst Bracelet">Add to
+                                Card</button>
+                            <!-- <a href="./product.html" class="btn btn-primary addCart">Add to Card</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="column product3 card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./product image/p3/product3a.png" class="card-img-top" alt="Green Gator Necklace">
+                        <div class="card-body">
+                            <h5 class="card-title">Green Gator Necklace</h5>
+                            <p class="cost">$ <span class="price">22</span></p>
+                            <button class="btn btn-primary addCart" id="p3" value="p3" name="Green Gator Necklace">Add
+                                to
+                                Card</button>
+                            <!-- <a href="./product.html" class="btn btn-primary addCart">Add to Card</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="column product4 card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./product image/p4/product4a.png" class="card-img-top" alt="Gold Chocker Necklace">
+                        <div class="card-body">
+                            <h5 class="card-title">Gold Chocker Necklace</h5>
+                            <p class="cost">$ <span class="price">23</span></p>
+                            <button class="btn btn-primary addCart" id="p4" value="p4" name="Gold Chocker Necklace">Add
+                                to
+                                Card</button>
+                            <!-- <a href="./product.html" class="btn btn-primary addCart">Add to Card</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="column product5 card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./product image/p5/product5a.png" class="card-img-top" alt="Rose Quartz Bracelet">
+                        <div class="card-body">
+                            <h5 class="card-title">Rose Quartz Bracelet</h5>
+                            <p class="cost">$ <span class="price">24</span></p>
+                            <button class="btn btn-primary addCart" id="p5" value="p5" name="Rose Quartz Bracelet">Add
+                                to
+                                Card</button>
+                            <!-- <a href="./product.html" class="btn btn-primary addCart">Add to Card</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="column product6 card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./product image/p6/product6a.png" class="card-img-top" alt="Aqua Bracelet">
+                        <div class="card-body">
+                            <h5 class="card-title">Aqua Bracelet</h5>
+                            <p class="cost">$ <span class="price">25</span></p>
+                            <button class="btn btn-primary addCart" id="p6" value="p6" name="Aqua Bracelet">Add to
+                                Card</button>
+                            <!-- <a href="./product.html" class="btn btn-primary addCart">Add to Card</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="column product7 card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./product image/p7/product7a.png" class="card-img-top" alt="Black Feather Necklace">
+                        <div class="card-body">
+                            <h5 class="card-title">Black Feather Necklace</h5>
+                            <p class="cost">$ <span class="price">26</span></p>
+                            <button class="btn btn-primary addCart" id="p7" value="p7" name="Black Feather Necklace">Add
+                                to
+                                Card</button>
+                            <!-- <a href="./product.html" class="btn btn-primary addCart">Add to Card</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="column product8 card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./product image/p8/product8a.png" class="card-img-top" alt="Tiger Bracelet">
+                        <div class="card-body">
+                            <h5 class="card-title">Tiger Bracelet</h5>
+                            <p class="cost">$ <span class="price">27</span></p>
+                            <button class="btn btn-primary addCart" id="p8" value="p8" name="Tiger Bracelet">Add to
+                                Card</button>
+                            <!-- <a href="./product.html" class="btn btn-primary addCart">Add to Card</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="column product9 card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./product image/p9/product9a.png" class="card-img-top"
+                            alt="Purple Frog Flower Bracelet">
+                        <div class="card-body">
+                            <h5 class="card-title">Purple Frog Flower Bracelet</h5>
+                            <p class="cost">$ <span class="price">28</span></p>
+                            <button class="btn btn-primary addCart" id="p9" value="p9"
+                                name="Purple Frog Flower Bracelet">Add to
+                                Card</button>
+                            <!-- <a href="./product.html" class="btn btn-primary addCart">Add to Card</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="column product10 card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./product image/p10/product10a.png" class="card-img-top" alt="Rainbow Stone Bracelet">
+                        <div class="card-body">
+                            <h5 class="card-title">Rainbow Stone Bracelet</h5>
+                            <p class="cost">$ <span class="price">29</span></p>
+                            <button class="btn btn-primary addCart" id="p10" value="p10"
+                                name="Rainbow Stone Bracelet">Add to
+                                Card</button>
+                            <!-- <a href="./product.html" class="btn btn-primary addCart">Add to Card</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="column product11 card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./product image/p11/product11a.png" class="card-img-top" alt="Blue Dragon Bracelet">
+                        <div class="card-body">
+                            <h5 class="card-title">Blue Dragon Bracelet</h5>
+                            <p class="cost">$ <span class="price">30</span></p>
+                            <button class="btn btn-primary addCart" id="p11" value="p11" name="Blue Dragon Bracelet">Add
+                                to
+                                Card</button>
+                            <!-- <a href="./product.html" class="btn btn-primary addCart">Add to Card</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="column product12 card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./product image/p12/product12a.png" class="card-img-top" alt="Green Frog Bracelet">
+                        <div class="card-body">
+                            <h5 class="card-title">Green Frog Bracelet</h5>
+                            <p class="cost">$ <span class="price">31</span></p>
+                            <button class="btn btn-primary addCart" id="p12" value="p12" name="Green Frog Bracelet">Add
+                                to
+                                Card</button>
+                            <!-- <a href="./product.html" class="btn btn-primary addCart">Add to Card</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Button trigger modal -->
+        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Launch demo modal
+        </button> -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Shopping Cart</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body cart">
+                        <div class="row">
+                            <div class="col items ">
+                                Item(s)
+                                <div>-------------------------------------</div>
+                            </div>
+                            <div class="col-md-auto costList">
+                                Total ($<span class="total "></span>)
+                                <div>----</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary continue" data-dismiss="modal">Continue
+                            Shopping</button>
+                        <button type="button" class="btn btn-primary checkout close" data-dismiss="modal"
+                            aria-label="Close">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade thankYou" id="exampleModal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog thankYous" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Shopping Cart</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body cart">
+                        Thank you for Shopping with us! your total is <span class="cartTotal"></span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary continue" data-dismiss="modal">Continue
+                            Shopping</button>
+                        <button type="button" class="btn btn-primary checkout">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="cart">
+            <div class="row">
+                <div class="col items ">
+                    Item(s)
+                    <div>-------------------------------------</div>
+                </div>
+                <div class="col col-lg-2 costList">
+                    Total ($<span class="total "></span>)
+                    <div>------------------</div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>
