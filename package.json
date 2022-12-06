@@ -4,7 +4,7 @@
   "description": "This app is for a retail storefront. The front end is created with HTML, CSS, JavaScrip. The database is created with MySQL and Sequelize.The web app will take in orders from customers and deplete stock from the store's inventory.",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "mysql2": "^1.6.5",
     "path": "^0.12.7",
     "sequelize": "^5.16.0"
